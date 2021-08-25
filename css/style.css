@@ -35,7 +35,11 @@ h2 {
 }
 .wrapper {
 	display: flex;
-	align-items:center;
+	justify-content: space-between;
+}
+
+.offer {
+	margin-top: 150px;
 }
 
 .header-title {
@@ -54,7 +58,8 @@ h2 {
 }
 
 .img-header {
-	width: 650px;
+	width: 640px;
+	height: 640px;	
 }
 
 .btn {
@@ -149,13 +154,15 @@ h2 {
 	}
 
 	.img-header {
-		width: 676px;
-		height: 676px;
 		display: block;
+		width: 490px;
+		height: 490px;
+		margin-top: 70px;
+		margin-left: -75px;
 	}
 
-	.wrapper {
-		flex-direction: column;
+	header {
+		padding-bottom: 70px;
 	}
 }
 
@@ -163,6 +170,24 @@ h2 {
 @media screen and (max-width: 992px) {
 	.container {
 		width: 720px;
+	}
+
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.img-header {
+		width: 676px;
+		height: 676px;
+		margin: 0;
+	}
+
+	.header-title {
+		width: 100%;
+	}
+
+	.header-text {
+		width: 100%;
 	}
 
 	.text-waiting {
@@ -246,11 +271,11 @@ h2 {
 	}
 
 	.header-title {
-		width: 290px;
+		width: auto;
 	}
 
 	.header-text {
-		width: 280px;
+		width: auto;
 	}
 
 	.img-header {
